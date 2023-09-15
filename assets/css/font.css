@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'fraunces_Regular';
+    src: url(/assets/font/Fraunces/Fraunces_Regular.ttf);
+}
+@font-face{
+    font-family: 'fraunces_SemiBold';
+    src: url(/assets/font/Fraunces/Fraunces_SemiBold.ttf);
+}
+@font-face{
+    font-family: 'fraunces_Bold';
+    src: url(/assets/font/Fraunces/Fraunces_Bold.ttf);
+}
+@font-face{
+    font-family: 'fraunces_Italic';
+    src: url(/assets/font/Fraunces/Fraunces_Italic.ttf);
+}
+@font-face{
+    font-family: 'helvetica_regular';
+    src: url(/assets/font/Helvetica/Helvetica_Regular.ttf);
+}
+@font-face{
+    font-family: 'helvetica_';
+    src: url(/assets/font/Helvetica/Helvetica_Regular.ttf);
+}

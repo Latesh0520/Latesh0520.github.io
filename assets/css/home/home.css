@@ -1,0 +1,28 @@
+.navbar .nav-row {
+  display: flex;
+}
+.navbar .nav-row .nav-col {
+  padding: 10px 15px;
+  width: 33.33%;
+  display: grid;
+  align-items: center;
+}
+.navbar .nav-row .nav-col .menu {
+  font-family: "fraunces_Regular";
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #403F2B;
+  cursor: pointer;
+}
+.navbar .nav-row .nav-col .logo {
+  font-family: "fraunces_Regular";
+  font-size: 30px;
+  text-decoration: none;
+  color: #403F2B;
+}
+.navbar .nav-row .nav-col .login_cart .login {
+  margin: 0 10px;
+}
+.navbar .nav-row .nav-col .login_cart .cart {
+  margin: 0 10px;
+}/*# sourceMappingURL=home.css.map */

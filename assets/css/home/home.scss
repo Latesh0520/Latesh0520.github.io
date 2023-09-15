@@ -1,0 +1,32 @@
+.navbar{
+    .nav-row{
+        display: flex;
+        .nav-col{
+            padding:10px 15px;
+            width: 33.33%;
+            display: grid;
+            align-items: center;
+            .menu{
+                font-family: 'fraunces_Regular';
+                text-transform: capitalize;
+                font-size: 24px;
+                color: #403F2B;
+                cursor: pointer;
+            }
+            .logo{
+                font-family: 'fraunces_Regular';
+                font-size: 30px;
+                text-decoration: none;
+                color: #403F2B;
+            }
+            .login_cart{
+                .login{
+                    margin: 0 10px;
+                }
+                .cart{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
