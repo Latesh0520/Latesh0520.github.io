@@ -1,32 +1,114 @@
-.navbar{
-    .nav-row{
+.navbar {
+    .nav-row {
         display: flex;
-        .nav-col{
-            padding:10px 15px;
+
+        .nav-col {
+            padding: 10px 15px;
             width: 33.33%;
             display: grid;
             align-items: center;
-            .menu{
+
+            .menu {
                 font-family: 'fraunces_Regular';
                 text-transform: capitalize;
                 font-size: 24px;
                 color: #403F2B;
                 cursor: pointer;
             }
-            .logo{
+
+            .logo {
                 font-family: 'fraunces_Regular';
                 font-size: 30px;
                 text-decoration: none;
                 color: #403F2B;
             }
-            .login_cart{
-                .login{
+
+            .login_cart {
+                .login {
+                    font-family: 'HelveticaNeueW10-45Ligh';
                     margin: 0 10px;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
                 }
-                .cart{
+
+                .cart {
                     margin: 0 10px;
+                    font-family: 'HelveticaNeueW10-45Ligh';
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+
+                        .fa-user {
+                            background-color: #403F2B;
+                            color: white;
+                            padding: 5px 4px 1px 4px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                        }
+                    }
                 }
             }
         }
+    }
+}
+.banner{
+    position: relative;
+    .content{
+        
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 0;
+        div{
+            text-align: center;
+            animation:  visibledelay 3s calc(1);  
+            h1{
+                color: #FFFDC3;
+                font-family: 'fraunces_Regular';
+                font-size: 315px;
+                margin: 0;
+                font-weight: 100; 
+            }
+            p{
+                font-family: 'fraunces_Regular';
+                color: white;
+                font-size: 35px;
+                margin: 0;
+                font-weight: 100;
+            }
+            button{
+                font-family: "fraunces_Regular";
+                font-size: 18px;
+                background-color: white;
+                border: 1px solid white;
+                border-radius: 29px;
+                padding: 10px 25px;
+                color: #403F2B;
+                margin-top: 65px;
+                transition-duration: 0.5s;
+
+                &:hover{
+                    background-color: #403F2B;
+                    border-color: #403F2B;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@keyframes visibledelay{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 }
