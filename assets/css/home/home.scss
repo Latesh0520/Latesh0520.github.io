@@ -55,38 +55,42 @@
         }
     }
 }
-.banner{
+
+.banner {
     position: relative;
-    .content{
-        
-        height: 100%;
-        width: 100%;
+    background-image: url(../../images/home-banner.jpg);
+    background-attachment: fixed;
+    height: 764px;
+
+    .content {
+
         display: flex;
         justify-content: center;
         align-items: center;
 
-        position: absolute;
-        top: 0;
-        div{
+        div {
             text-align: center;
-            animation:  visibledelay 3s calc(1);  
-            h1{
+            animation: visibledelay 3s calc(1);
+
+            h1 {
                 color: #FFFDC3;
                 font-family: 'fraunces_Regular';
                 font-size: 315px;
                 margin: 0;
-                font-weight: 100; 
+                font-weight: 100;
             }
-            p{
+
+            p {
                 font-family: 'fraunces_Regular';
                 color: white;
                 font-size: 35px;
                 margin: 0;
                 font-weight: 100;
             }
-            button{
-                font-family: "fraunces_Regular";
-                font-size: 18px;
+
+            button {
+                font-family: 'HelveticaNeueW10-45Ligh';
+                font-size: 16px;
                 background-color: white;
                 border: 1px solid white;
                 border-radius: 29px;
@@ -95,7 +99,7 @@
                 margin-top: 65px;
                 transition-duration: 0.5s;
 
-                &:hover{
+                &:hover {
                     background-color: #403F2B;
                     border-color: #403F2B;
                     color: white;
@@ -104,11 +108,162 @@
         }
     }
 }
-@keyframes visibledelay{
-    0%{
+
+@keyframes visibledelay {
+    0% {
         transform: translateY(30px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
+    }
+}
+
+.zero_waste {
+    padding: 50px 0;
+    background-color: #C4C197;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .image {
+            text-align: end;
+            animation: imageright 2s;
+            // animation-delay: 5s;
+
+            img {
+                border-radius: 30px;
+                height: 478px;
+                width: 541px;
+            }
+
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            animation: contentleft 2s;
+
+            // justify-content: center;
+            h1 {
+                font-size: 54px;
+                font-family: "fraunces_Regular";
+                color: #403F2B;
+                font-weight: 100;
+            }
+
+            p {
+                font-family: 'HelveticaNeueW10-45Ligh';
+                color: #403F2B;
+                font-size: 20px;
+            }
+
+            button {
+                font-family: 'HelveticaNeueW10-45Ligh';
+                font-size: 16px;
+                background-color: #403F2B;
+                border: 1px solid #403F2B;
+                border-radius: 29px;
+                padding: 10px 25px;
+                color: #fff;
+                margin-top: 30px;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #403F2B;
+                }
+            }
+        }
+    }
+}
+
+@keyframes imageright {
+    0% {
+        transform: translateX(120px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes contentleft {
+    0% {
+        transform: translateX(-120px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.shop-collection {
+
+    .heading{
+        h1{
+            font-family: "fraunces_Regular";
+            font-weight: 100;
+            font-size: 35px;
+            color: #403F2B;
+            text-align: center;
+        }
+    }
+
+    .row {
+
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .col {
+            position: relative;
+            height: 412px;
+            width: 412px;
+            overflow: hidden;
+            border-radius: 20px;
+
+            .image {
+                img {
+                    height: 412px;
+                    width: 412px;
+                    border-radius: 20px;
+                    filter: brightness(50%);
+                    transition-duration: 1s;
+                }
+            }
+
+            .content {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                h1 {
+                    font-family: "fraunces_Regular";
+                    font-weight: 100;
+                    font-size: 60px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: 'HelveticaNeueW10-45Ligh';
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 }

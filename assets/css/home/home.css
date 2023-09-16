@@ -46,15 +46,14 @@
 
 .banner {
   position: relative;
+  background-image: url(../../images/home-banner.jpg);
+  background-attachment: fixed;
+  height: 764px;
 }
 .banner .content {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
 }
 .banner .content div {
   text-align: center;
@@ -75,8 +74,8 @@
   font-weight: 100;
 }
 .banner .content div button {
-  font-family: "fraunces_Regular";
-  font-size: 18px;
+  font-family: "HelveticaNeueW10-45Ligh";
+  font-size: 16px;
   background-color: white;
   border: 1px solid white;
   border-radius: 29px;
@@ -98,4 +97,120 @@
   100% {
     transform: translateY(0px);
   }
+}
+.zero_waste {
+  padding: 50px 0;
+  background-color: #C4C197;
+}
+.zero_waste .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.zero_waste .container .image {
+  text-align: end;
+  animation: imageright 2s;
+}
+.zero_waste .container .image img {
+  border-radius: 30px;
+  height: 478px;
+  width: 541px;
+}
+.zero_waste .container .content {
+  display: flex;
+  align-items: center;
+  animation: contentleft 2s;
+}
+.zero_waste .container .content h1 {
+  font-size: 54px;
+  font-family: "fraunces_Regular";
+  color: #403F2B;
+  font-weight: 100;
+}
+.zero_waste .container .content p {
+  font-family: "HelveticaNeueW10-45Ligh";
+  color: #403F2B;
+  font-size: 20px;
+}
+.zero_waste .container .content button {
+  font-family: "HelveticaNeueW10-45Ligh";
+  font-size: 16px;
+  background-color: #403F2B;
+  border: 1px solid #403F2B;
+  border-radius: 29px;
+  padding: 10px 25px;
+  color: #fff;
+  margin-top: 30px;
+  transition-duration: 0.5s;
+}
+.zero_waste .container .content button:hover {
+  background-color: transparent;
+  color: #403F2B;
+}
+
+@keyframes imageright {
+  0% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes contentleft {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.shop-collection .heading h1 {
+  font-family: "fraunces_Regular";
+  font-weight: 100;
+  font-size: 35px;
+  color: #403F2B;
+  text-align: center;
+}
+.shop-collection .row {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.shop-collection .row .col {
+  position: relative;
+  height: 412px;
+  width: 412px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.shop-collection .row .col .image img {
+  height: 412px;
+  width: 412px;
+  border-radius: 20px;
+  filter: brightness(50%);
+  transition-duration: 1s;
+}
+.shop-collection .row .col .content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.shop-collection .row .col .content h1 {
+  font-family: "fraunces_Regular";
+  font-weight: 100;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.shop-collection .row .col .content p {
+  font-family: "HelveticaNeueW10-45Ligh";
+  color: #fff;
+  font-size: 20px;
+}
+.shop-collection .row .col:hover img {
+  transform: scale(1.2);
 }/*# sourceMappingURL=home.css.map */
